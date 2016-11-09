@@ -16,39 +16,42 @@
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
       <span>Personal details</span>
-      <div>
-        <label for="name">Name</label>
-        <input id="name">
-      </div>
-      <div>
-        <label for="age">Age</label>
-        <input id="age">
-      </div>
-      <div class="push">
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="me@me.com">
-      </div>
-      <div class="push">
-        <label for="Physical fitness">Physical fitness</label>
-        <select id="sPhysical fitness" name="_Physical fitness">
-          <option>Super-human</option>
-          <option>Fit as a fiddle</option>
-          <option>Not terribly strong</option>
-          <option>A little couch-potato-y</option>
-        </select>
-      </div>
-      <div class="push">
-        <label for="details">Address</label>
-        <textarea id="details" name="message"></textarea>
-      </div>
-      <span>Mission statement</span>
-      <div class="push">
-        <label for="details">Why do you want to go to Mars?</label>
-        <textarea id="details" name="message"></textarea>
-      </div>
-      <div>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input id="name">
+        </div>
+        <div>
+          <label for="age">Age</label>
+          <input id="age">
+        </div>
+        <div class="push">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="me@me.com">
+        </div>
+        <form class="push">
+          <label for="Physical fitness">Physical fitness</label>
+          <select id="Physical fitness" name="_Physical fitness">
+            <option>Super-human</option>
+            <option>Fit as a fiddle</option>
+            <option>Not terribly strong</option>
+            <option>A little couch-potato-y</option>
+          </select>
+          <div class="push">
+            <label for="details">Address</label>
+            <textarea id="details" name="message"></textarea>
+          </div>
+        </form>
+        <form>
+        <span>Mission statement</span>
+        <div class="push">
+          <label for="details">Why do you want to go to Mars?</label>
+          <textarea id="details" name="message"></textarea>
+        </div>
+        <div>
           <button class="btn" type="submit">Register for the trip!</button>
         </div>
+      </form>
     </div>
   </section>
 </dody>
