@@ -8,51 +8,52 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
 </head>
 <body>
-  <section>
-    <div>
-      <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-      <span>Personal details</span>
-      <form>
-        <div>
-          <label for="name">Name</label>
-          <input id="name">
-        </div>
-        <div>
-          <label for="age">Age</label>
-          <input id="age">
-        </div>
+  <section class="gutter-2">
+    <h1>Want to go to Mars?</h1>
+    <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    <form method="POST" action="https://formspree.io/hiskoduck@hotmail.com">
+    <fieldset>
+      <legend>Personal details</legend>
+      <div>
+        <label for="name">Name</label>
+        <input id="name">
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input id="age">
+      </div>
+      <div class="push">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="me@me.com">
+      </div>
+      <div>
+        <label for="physical-fitness">Physical fitness</label>
+        <select id="physical-fitness">
+          <option>Super-human</option>
+          <option>Fit as a fiddle</option>
+          <option>Not terribly strong</option>
+          <option>A little couch-potato-y</option>
+        </select>
+      </div>
+      <div class="push">
+        <label for="address">Address</label>
+        <textarea id="address" name="address"></textarea>
+      </div>
+      </fieldset>
+      <fieldset>
+        <legend>Mission statement</legend>
         <div class="push">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com">
-        </div>
-        <form class="push">
-          <label for="Physical fitness">Physical fitness</label>
-          <select id="Physical fitness" name="_Physical fitness">
-            <option>Super-human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-          </select>
-          <div class="push">
-            <label for="details">Address</label>
-            <textarea id="details" name="message"></textarea>
-          </div>
-        </form>
-        <form>
-        <span>Mission statement</span>
-        <div class="push">
-          <label for="details">Why do you want to go to Mars?</label>
-          <textarea id="details" name="message"></textarea>
+          <label for="question">Why do you want to go to Mars?</label>
+          <textarea id="question" name="answer"></textarea>
         </div>
         <div>
           <button class="btn" type="submit">Register for the trip!</button>
         </div>
-      </form>
-    </div>
+      </fieldset>
+    </form>
   </section>
-</dody>
+</body>
 </html>
