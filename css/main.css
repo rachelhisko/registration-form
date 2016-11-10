@@ -18,7 +18,7 @@ fieldset {
 }
 
 @media only screen and (min-width: 60em) {
-  
+
   .field-left {
     display: inline-block;
     padding-right: .5rem;
