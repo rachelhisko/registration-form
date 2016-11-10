@@ -32,7 +32,7 @@
           </div>
           <div class="push field-rigth">
             <label for="physical-fitness">Physical fitness</label>
-            <select id="physical-fitness">
+            <select id="physical-fitness" name="physical-fitness">
               <option>Super-human</option>
               <option>Fit as a fiddle</option>
               <option>Not terribly strong</option>
@@ -44,20 +44,17 @@
             <textarea id="address" name="address"></textarea>
           </div>
         </fieldset>
-        <fieldset>
-          <legend class="italic">Mission statement</legend>
+        <fieldset class="push-0">
+          <legend class="italic push giga">Mission statement</legend>
           <div class="push">
-            <label for="question">Why do you want to go to Mars?</label>
-            <textarea id="question" name="answer"></textarea>
-          </div>
-          <div>
-            <button class="btn" type="submit">Register for the trip!</button>
-          </div>
-          <div hidden>
-            <label for="request">Request to join the mission</label>
-            <input id="request">
+            <label for="why">Why do you want to go to Mars?</label>
+            <textarea id="why" name="message"></textarea>
           </div>
         </fieldset>
+        <div class="island text-center">
+          <input type="hidden" name="Request to join the mission">
+          <button class="btn" type="submit">Register for the trip!</button>
+        </div>
       </form>
     </div>
   </section>
